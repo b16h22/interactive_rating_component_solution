@@ -1,0 +1,129 @@
+
+    * {
+      font-family: Overpass;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: hsl(216, 12%, 8%);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      width: 22rem;
+      background-color: hsl(213, 19%, 18%);
+      border-radius: 2rem;
+      padding: 2rem;
+      box-shadow: 0 8px 16px hsl(216, 12%, 8%);
+    }
+
+    .layout-two {
+      text-align: center;
+    }
+
+    .star-icon {
+      background-color: hsla(217, 12%, 63%, 0.1);
+      height: 1.2rem;
+      width: 1.2rem;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+
+    .rating-section {
+      display: flex;
+      justify-content: space-between;
+      padding-block: 1rem;
+    }
+
+    .rating-button span {
+      display: inline-block;
+    }
+
+    /* Rating buttons */
+
+    .rating {
+      height: 3.5rem;
+      width: 3.5rem;
+      text-align: center;
+      border: none;
+      border-radius: 2rem;
+      background-color:hsla(217, 12%, 63%, 0.1);
+      color: hsl(217, 12%, 63%);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .rating:focus {
+      background-color: hsl(0, 0%, 100%);
+      color: hsl(216, 12%, 8%);
+    }
+
+    .rating:hover {
+      background-color: hsl(25, 97%, 53%);
+      color: hsl(216, 12%, 8%);
+    }
+
+    /* Submit button */
+
+    .submit {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      background-color: hsl(25, 97%, 53%);
+      color: hsl(216, 12%, 8%);
+      letter-spacing: 0.1rem;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 2rem;
+      border: none;
+      box-shadow: 0 4px 8px hsla(216, 12%, 8%, 0.2);
+    }
+
+    .submit:hover {
+      background-color: hsl(0, 0%, 100%);
+    }
+
+    .thanks-image {
+      margin-top: 1rem;
+    }
+
+    /* Text */
+
+    .card-title-main {
+      color: hsl(0, 0%, 100%);
+    }
+
+    .card-subtitle {
+      color: hsl(217, 12%, 63%);
+      line-height: 1.5rem;
+    }
+
+    .rating-summary {
+      width: 50%;
+      margin-inline: auto;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      background-color: hsla(217, 12%, 63%, 0.1);
+      border-radius: 1.5rem;
+      padding: 0.5rem;
+      color: hsl(25, 97%, 53%);
+      vertical-align: middle;
+    }
+
+    @media screen and (max-width:32em) {
+
+      .container {
+        padding-inline: 2.5rem;
+      }
+
+      .card {
+        width: 100%;
+      }
+    }
